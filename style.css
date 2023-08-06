@@ -257,6 +257,142 @@ main {
     border: solid 1px #FF6A6A;
 }
 
+footer {
+    background: #222224;
+}
+
+.promotions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    padding: 104px 0;
+}
+
+.promo__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+}
+
+.promo__card img {
+    margin-bottom: 28px;
+}
+
+.promo__header {
+    color: #FBFBFB;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.promo__text {
+    color: #FBFBFB;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+}
+
+.subscribes {
+    background: url("img/footer_bck.svg");
+}
+
+.subscribes_bck {
+    background: rgba(244, 244, 244, 0.70);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 448px;
+}
+
+.subscribe__feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback__text {
+    color: #222224;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 40px;
+    max-width: 360px;
+}
+
+.feedback__text--italic {
+    font-style: italic;
+}
+
+.subscribe__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.subscribe__header {
+    color: #222224;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.subscribe__text {
+    color: #222224;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.input__mail {
+    color: #222224;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 49px;
+    background: #E1E1E1;
+    border: #E1E1E1;
+    border-radius: 25px 0 0 25px;
+    padding-left: 20px;
+    width: 236px;
+}
+
+.subscribe__btn {
+    color: #FFF;
+    background: #F16D7F;
+    border-radius: 0 25px 25px 0;
+    border: #F16D7F;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 49px;
+    padding: 0 20px;
+    width: 100px;
+    margin-left: -3px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+}
+
+.social__text {
+    color: #FBFBFB;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+
+
 @media (max-width: 1024px) and (min-width: 768px) {
     .container {
         max-width: 768px;
@@ -407,3 +543,4 @@ main {
     }
 
 }
+
