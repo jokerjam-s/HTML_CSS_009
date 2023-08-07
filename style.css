@@ -116,6 +116,7 @@ main {
     position: relative;
 }
 
+
 .top__link {
     display: flex;
     justify-content: center;
@@ -190,25 +191,29 @@ main {
     height: 420px;
 }
 
+.card__img img {
+    width: 100%;
+}
+
 .cart {
     position: absolute;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(58, 56, 56, 0.86);;
-
+    height: 0;
+    background: rgba(58, 56, 56, 0.86);
+    transition: height 0.2s ease-in;
 }
 
 .prod__card:hover .cart {
-    display: flex;
+    height: 100%;
 }
 
 .cart__btn {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     gap: 11px;
@@ -220,8 +225,16 @@ main {
     border: solid 1px #FFFFFF;
 }
 
+.cart__btn img {
+    width: 26px;
+}
+
 .card__info {
     padding: 24px;
+}
+
+.prod__card:hover .cart__btn {
+    display: flex;
 }
 
 .card__title {
@@ -255,6 +268,12 @@ main {
     padding: 15px 39px;
     margin: 48px auto 60px auto;
     border: solid 1px #FF6A6A;
+    transition: color 0.25s linear, background-color 0.25s linear;
+}
+
+.prod__btn:hover {
+    color: #FFFFFF;
+    background: #F16D7F;
 }
 
 footer {
@@ -298,7 +317,7 @@ footer {
 }
 
 .subscribes {
-    background: url("img/footer_bck.svg");
+    background-image: url("img/footer_bck.jpg");
 }
 
 .subscribes_bck {
@@ -355,12 +374,16 @@ footer {
     color: #222224;
     font-size: 14px;
     font-weight: 400;
-    line-height: 49px;
+    line-height: 29px;
     background: #E1E1E1;
     border: #E1E1E1;
     border-radius: 25px 0 0 25px;
-    padding-left: 20px;
+    padding: 10px 20px;
     width: 236px;
+}
+
+.input__mail:focus {
+    outline: none;
 }
 
 .subscribe__btn {
@@ -375,13 +398,15 @@ footer {
     padding: 0 20px;
     width: 100px;
     margin-left: -3px;
+    cursor: pointer;
 }
 
 .socials {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin: 25px auto;
+    margin-top: 25px;
+    padding-bottom: 25px;
 }
 
 .social__text {
@@ -391,7 +416,28 @@ footer {
     line-height: 19px;
 }
 
+.social__icons {
+    display: flex;
+    gap: 7px;
+}
 
+.social__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    width: 32px;
+    height: 32px;
+    transition: background-color 0.2s linear, fill 0.2s linear;
+}
+
+.social__icon:hover {
+    background-color: #F16D7F;
+}
+
+.social__icon:hover path{
+    fill: #FFFFFF;
+}
 
 @media (max-width: 1024px) and (min-width: 768px) {
     .container {
@@ -521,7 +567,7 @@ footer {
 
     .top__card--large img {
         width: 200%;
-        height: 200%;
+        /*height: 200%;*/
     }
 
     .prod__info {
