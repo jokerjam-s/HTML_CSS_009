@@ -317,7 +317,10 @@ footer {
 }
 
 .subscribes {
+    background-color: #F4F4F4B2;
     background-image: url("img/footer_bck.jpg");
+    background-size: cover;
+    background-position: 25% 100px;
 }
 
 .subscribes_bck {
@@ -435,7 +438,7 @@ footer {
     background-color: #F16D7F;
 }
 
-.social__icon:hover path{
+.social__icon:hover path {
     fill: #FFFFFF;
 }
 
@@ -491,6 +494,21 @@ footer {
 
     .prod__btn {
         margin: 32px auto 70px auto;
+    }
+
+    .promotions {
+        flex-direction: column;
+        row-gap: 48px;
+        padding: 48px 0 64px;
+    }
+
+    /*.subscribes {*/
+    /*    background-image: url("img/footer_bck_middle.jpg");*/
+    /*}*/
+
+    .subscribes_bck {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 347px);
     }
 }
 
