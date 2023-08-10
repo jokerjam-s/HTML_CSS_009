@@ -86,7 +86,8 @@ main {
 
 /*Основные свойства унаследованы от header__text. Или лучше объявлять полностью? */
 .header__text--coral {
-    color: #F16D7F;
+    /*color: #F16D7F;*/
+    color: #cd5364;
 }
 
 .top {
@@ -143,7 +144,7 @@ main {
 }
 
 .top__text {
-    color: #F16D7F;
+    color: #db5467;
     font-size: 24px;
     font-weight: 700;
 }
@@ -164,7 +165,7 @@ main {
 }
 
 .prod__info {
-    color: #9F9F9F;
+    color: #717171;
     font-size: 14px;
     font-weight: 400;
     text-align: center;
@@ -253,27 +254,27 @@ main {
 }
 
 .card__price {
-    color: #F16D7F;
+    color: #b34655;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
 }
 
 .prod__btn {
-    color: #F26376;
+    color: #cd5364;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
     text-align: center;
     padding: 15px 39px;
     margin: 48px auto 60px auto;
-    border: solid 1px #FF6A6A;
+    border: solid 1px #cd5364;
     transition: color 0.25s linear, background-color 0.25s linear;
 }
 
 .prod__btn:hover {
     color: #FFFFFF;
-    background: #F16D7F;
+    background: #cd5364;
 }
 
 footer {
@@ -390,9 +391,9 @@ footer {
 
 .subscribe__btn {
     color: #FFF;
-    background: #F16D7F;
+    background: #cd5364;
     border-radius: 0 25px 25px 0;
-    border: #F16D7F;
+    border: #cd5364;
     text-align: center;
     font-size: 14px;
     font-weight: 400;
@@ -441,7 +442,7 @@ footer {
 }
 
 .social__icon:hover {
-    background-color: #F16D7F;
+    background-color: #cd5364;
 }
 
 .social__icon:hover path {
